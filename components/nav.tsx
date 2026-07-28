@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { site } from "@/lib/data";
 
 const links = [
@@ -8,31 +11,35 @@ const links = [
 ];
 
 export function Nav() {
+  const pathname = usePathname();
+
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-white/80 backdrop-blur-xl">
-      <div className="reveal mx-auto flex w-full max-w-4xl items-center justify-between px-6 py-4 sm:px-8">
+    <header className="sticky top-0 z-50 border-b border-line/80 bg-bg/70 backdrop-blur-xl">
+      <div className="mx-auto flex w-full max-w-3xl items-center justify-between px-6 py-4 sm:px-8">
         <Link
           href="/"
-          className="flex items-center gap-3 text-sm font-semibold tracking-tight text-ink transition-colors hover:text-accent-bright"
+          className="font-display text-[0.95rem] font-semibold tracking-tight text-ink transition-colors hover:text-accent-bright"
         >
-          <span className="flex h-8 w-8 items-center justify-center rounded-full border border-line-strong bg-accent-soft text-xs font-bold text-accent">
-            {site.name
-              .split(" ")
-              .map((part) => part[0])
-              .join("")}
-          </span>
-          {site.name.split(" ")[0]}
+          {site.name}
         </Link>
-        <nav className="flex items-center gap-1 rounded-full border border-line bg-white p-1 text-sm shadow-sm sm:gap-0">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="rounded-full px-3.5 py-1.5 text-ink-muted transition-colors hover:bg-accent-soft hover:text-ink sm:px-4"
-            >
-              {link.label}
-            </Link>
-          ))}
+        <nav className="flex items-center gap-5 text-sm sm:gap-7">
+          {links.map((link) => {
+            const isActive =
+              link.href === "/"
+                ? pathname === "/"
+                : pathname.startsWith(link.href);
+
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="nav-link"
+                aria-current={isActive ? "page" : undefined}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
       </div>
     </header>

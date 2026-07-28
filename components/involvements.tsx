@@ -3,21 +3,26 @@ import { SectionHeading } from "@/components/section-heading";
 
 export function Involvements() {
   return (
-    <section className="mx-auto mt-24 w-full max-w-4xl px-6 sm:mt-32 sm:px-8">
+    <section className="mx-auto mt-20 w-full max-w-3xl px-6 sm:mt-28 sm:px-8">
       <SectionHeading title="Involvements" />
-      <div className="grid gap-3 sm:grid-cols-3">
+      <ul className="space-y-0">
         {involvements.map((item) => (
-          <div key={item.org} className="card p-5">
-            <p className="text-sm font-semibold tracking-tight text-ink">
-              {item.org}
-            </p>
-            <p className="mt-1 text-sm text-accent-bright">{item.role}</p>
-            <p className="mt-3 text-xs font-medium tracking-wide text-ink-faint uppercase">
+          <li
+            key={item.org}
+            className="flex flex-col gap-1 border-b border-line py-4 first:border-t sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
+          >
+            <div>
+              <p className="text-sm font-semibold tracking-tight text-ink">
+                {item.org}
+              </p>
+              <p className="mt-0.5 text-sm text-ink-muted">{item.role}</p>
+            </div>
+            <span className="shrink-0 text-xs font-medium tracking-wide text-ink-faint">
               {item.period}
-            </p>
-          </div>
+            </span>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }
