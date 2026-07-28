@@ -5,10 +5,10 @@ export const site = {
   status: "Open to interesting work",
   email: "hello@tobiadejumo.com",
   socials: [
-    { label: "X", href: "https://x.com" },
+    { label: "X", href: "https://x.com/emmanuel3ykd" },
     { label: "GitHub", href: "https://github.com/Tobi3333A" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
-    { label: "Email", href: "mailto:hello@tobiadejumo.com" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/emmanuel-adejumo-194473271/" },
+    { label: "Email", href: "mailto:emma.adejumo3333@gmail.com" },
   ],
   bio: "I build products that feel calm, fast, and intentional — frontend systems, clean interfaces, and tools that get out of your way.",
   focus:
