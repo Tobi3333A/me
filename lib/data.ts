@@ -1,16 +1,15 @@
 export const site = {
-  name: "Tobi Adejumo",
+  name: "Emmanuel Adejumo",
   role: "Engineer & Builder",
   location: "Building from wherever the wifi is good",
-  status: "Open to interesting work",
-  email: "hello@tobiadejumo.com",
+  email: "amma.adejumo3333@gmail.com",
   socials: [
     { label: "X", href: "https://x.com/emmanuel3ykd" },
     { label: "GitHub", href: "https://github.com/Tobi3333A" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/emmanuel-adejumo-194473271/" },
     { label: "Email", href: "mailto:emma.adejumo3333@gmail.com" },
   ],
-  bio: "I build products that feel calm, fast, and intentional — frontend systems, clean interfaces, and tools that get out of your way.",
+  bio: "I build things I think people need, not just what they want.",
   focus:
     "Right now I'm exploring design, engineering, and AI-assisted workflows. Always chasing clarity over clutter.",
 };
@@ -25,35 +24,20 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    company: "Northline",
+    company: "Chadashiel Education",
     role: "Founder",
     period: "2025 — Present",
     description:
-      "Building a focused workspace for makers who want less noise and more shipping.",
-    href: "#",
+      "Building an AI Academic Coach.",
+    href: "https://chadashiel.com",
   },
   {
-    company: "Harbor Labs",
-    role: "Software Engineer",
-    period: "2024 — 2025",
+    company: "Xavier University of Louisiana",
+    role: "Research Assistant",
+    period: "2025 — Present",
     description:
-      "Shipped product interfaces and design systems for early-stage teams.",
-    href: "#",
-  },
-  {
-    company: "Summit Digital",
-    role: "Frontend Engineer",
-    period: "2023 — 2024",
-    description:
-      "Led UI rebuilds across marketing and product surfaces with an eye for performance.",
-    href: "#",
-  },
-  {
-    company: "Freelance",
-    role: "Product Designer & Engineer",
-    period: "2021 — 2023",
-    description:
-      "Partnered with founders to turn rough ideas into polished, launch-ready products.",
+      "Researching ways to make the air cleaner.",
+    href: "https://xula.edu",
   },
 ];
 
@@ -90,25 +74,25 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Northline",
+    title: "Chadashiel",
     description:
-      "A calm command center for personal projects, notes, and shipping rituals.",
+      "The AI Academic Coach.",
     tags: ["Next.js", "TypeScript", "AI"],
-    href: "#",
+    href: "https://chadashiel.com",
   },
   {
-    title: "Pulseboard",
+    title: "ChadPlace",
     description:
-      "Lightweight analytics for indie products — signal without the dashboard noise.",
+      "Marketplace & Chatting for Students.",
     tags: ["React", "Charts", "API"],
-    href: "#",
+    href: "https://chadplace.vercel.app",
   },
   {
-    title: "Ledger Lite",
+    title: "CS-ready",
     description:
-      "A minimal finance tracker with clear categories and zero visual clutter.",
+      "A readiness tracker for CS students.",
     tags: ["Flutter", "SQLite"],
-    href: "#",
+    href: "https://cs-ready.vercel.app",
   },
   {
     title: "Prompt Atlas",

@@ -23,7 +23,7 @@ function ExperienceItem({ item }: { item: Experience }) {
 
   if (item.href) {
     return (
-      <a href={item.href} className="timeline-item group block py-5">
+      <a href={item.href} target="_blank" rel="noopener noreferrer" className="timeline-item group block py-5">
         <div className="transition-colors group-hover:[&_h3]:text-accent-bright">
           {inner}
         </div>

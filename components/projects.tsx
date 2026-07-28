@@ -39,6 +39,8 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
     return (
       <a
         href={project.href}
+        target="_blank"
+        rel='noopener noreferrer'
         className="card card-interactive group block p-5 sm:p-6"
       >
         {inner}
