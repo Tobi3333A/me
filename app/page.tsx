@@ -11,7 +11,7 @@ export default function Home() {
       <Experience />
       <Involvements />
       <Projects limit={4} showAllLink />
-      <Writings limit={3} showAllLink />
+      {/* <Writings limit={3} showAllLink /> */}
     </>
   );
 }

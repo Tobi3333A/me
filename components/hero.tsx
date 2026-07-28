@@ -3,8 +3,6 @@ import { site } from "@/lib/data";
 export function Hero() {
   return (
     <section className="relative mx-auto flex min-h-[72vh] w-full max-w-3xl flex-col justify-center px-6 pb-8 pt-16 sm:min-h-[78vh] sm:px-8 sm:pt-20">
-      <p className="reveal status-line">{site.status}</p>
-
       <h1 className="reveal reveal-delay-1 font-display mt-8 text-[clamp(3rem,11vw,5.25rem)] font-semibold leading-[0.95] tracking-[-0.035em] text-ink">
         {site.name}
       </h1>
