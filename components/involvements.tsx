@@ -12,9 +12,11 @@ export function Involvements() {
             className="flex flex-col gap-1 border-b border-line py-4 first:border-t sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
           >
             <div>
-              <p className="text-sm font-semibold tracking-tight text-ink">
-                {item.org}
-              </p>
+              <a href={item.href} target="_blank" rel='noopener noreferrer'>
+                <p className="text-sm font-semibold tracking-tight text-ink hover:text-accent-bright">
+                  {item.org}
+                </p>
+              </a>
               <p className="mt-0.5 text-sm text-ink-muted">{item.role}</p>
             </div>
             <span className="shrink-0 text-xs font-medium tracking-wide text-ink-faint">
