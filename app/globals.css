@@ -13,6 +13,10 @@
   --accent-bright: #2a6a52;
   --accent-soft: rgba(31, 79, 61, 0.09);
   --glow: rgba(31, 79, 61, 0.12);
+  --scrollbar-size: 10px;
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: rgba(31, 79, 61, 0.28);
+  --scrollbar-thumb-hover: rgba(31, 79, 61, 0.48);
 }
 
 @theme inline {
@@ -36,6 +40,9 @@
 
 html {
   scroll-behavior: smooth;
+  /* Firefox: thin scrollbar + thumb / track colors */
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 
 body {
@@ -45,6 +52,34 @@ body {
   color: var(--ink);
   font-family: var(--font-body), system-ui, sans-serif;
   text-rendering: optimizeLegibility;
+}
+
+/* Chrome, Edge, Safari — WebKit scrollbar parts */
+*::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 999px;
+  /* Transparent border creates a “inset” look so the thumb doesn’t hug the edge */
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 ::selection {
