@@ -26,9 +26,9 @@ export const experiences: Experience[] = [
   {
     company: "Chadashiel Education",
     role: "Founder",
-    period: "2025 — Present",
+    period: "2026 — Present",
     description:
-      "Building an AI Academic Coach.",
+      "Building The AI Academic Coach.",
     href: "https://chadashiel.com",
   },
   {
@@ -37,7 +37,7 @@ export const experiences: Experience[] = [
     period: "2025 — Present",
     description:
       "Researching ways to make the air cleaner.",
-    href: "https://xula.edu",
+    href: "https://www.xula.edu",
   },
 ];
 
@@ -49,19 +49,14 @@ export type Involvement = {
 
 export const involvements: Involvement[] = [
   {
-    org: "Open Source Collective",
-    role: "Contributor",
-    period: "2024 — Present",
-  },
-  {
-    org: "Campus Builders",
-    role: "Mentor",
-    period: "2023 — Present",
-  },
-  {
-    org: "Design Engineering Guild",
+    org: "National Society of Black Engineers",
     role: "Member",
-    period: "2022 — Present",
+    period: "2025 — Present",
+  },
+  {
+    org: "ColorStack",
+    role: "Member",
+    period: "2025 — Present",
   },
 ];
 
@@ -77,28 +72,28 @@ export const projects: Project[] = [
     title: "Chadashiel",
     description:
       "The AI Academic Coach.",
-    tags: ["Next.js", "TypeScript", "AI"],
+    tags: ["AI SDK", "Next.js", "Supabase", "PGVector"],
     href: "https://chadashiel.com",
   },
   {
     title: "ChadPlace",
     description:
       "Marketplace & Chatting for Students.",
-    tags: ["React", "Charts", "API"],
+    tags: ["Expo", "Next.js", "Supabase Realtime"],
     href: "https://chadplace.vercel.app",
   },
   {
-    title: "CS-ready",
+    title: "CS-Ready",
     description:
-      "A readiness tracker for CS students.",
-    tags: ["Flutter", "SQLite"],
+      "A readiness tracker & guider for CS students.",
+    tags: ["Next.js", "OpenAI", "PostgreSQL"],
     href: "https://cs-ready.vercel.app",
   },
   {
-    title: "Prompt Atlas",
+    title: "Saturday Morning Science",
     description:
-      "A visual library for reusable AI prompts across writing, code, and design.",
-    tags: ["Next.js", "Tailwind", "AI"],
+      "Official website for the Saturday Morning Science program at XULA.",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
     href: "#",
   },
 ];
