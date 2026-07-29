@@ -7,7 +7,7 @@ import { site } from "@/lib/data";
 const links = [
   { href: "/", label: "Home" },
   { href: "/projects", label: "Projects" },
-  { href: "/writings", label: "Writings" },
+  // { href: "/writings", label: "Writings" },
 ];
 
 export function Nav() {
