@@ -45,6 +45,7 @@ export type Involvement = {
   org: string;
   role: string;
   period: string;
+  href: string
 };
 
 export const involvements: Involvement[] = [
@@ -52,11 +53,13 @@ export const involvements: Involvement[] = [
     org: "National Society of Black Engineers",
     role: "Member",
     period: "2025 — Present",
+    href: 'https://nsbe.org/'
   },
   {
     org: "ColorStack",
     role: "Member",
     period: "2025 — Present",
+    href: 'https://www.colorstack.org/'
   },
 ];
 
