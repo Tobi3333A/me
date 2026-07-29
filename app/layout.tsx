@@ -18,8 +18,8 @@ const body = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: "Tobi Adejumo",
-    template: "%s · Tobi Adejumo",
+    default: "Emmanuel Adejumo",
+    template: "%s · Emmanuel Adejumo",
   },
   description:
     "Engineer and builder. Personal site for projects, experience, and writing.",
