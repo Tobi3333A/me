@@ -95,7 +95,7 @@ export const projects: Project[] = [
   {
     title: "ChadConnect",
     description:
-      "Share rides & housing and connect with other students during hackathons, conferences, and more.",
+      "Share rides & housing with other students during hackathons, conferences, and more.",
     tags: ["Expo", "React Native", "Supabase"],
     href: "https://github.com/Tobi3333A/chad-connect",
   },
