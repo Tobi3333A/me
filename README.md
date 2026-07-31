@@ -1,6 +1,6 @@
 # Emmanuel Adejumo
 
-Personal site for an engineer and builder — experience, involvements, and projects.
+This is my personal site — projects, experience, and whatever I’m working on.
 
 ## Stack
 
