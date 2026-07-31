@@ -93,11 +93,11 @@ export const projects: Project[] = [
     href: "https://cs-ready.vercel.app",
   },
   {
-    title: "Saturday Morning Science",
+    title: "ChadConnect",
     description:
-      "Official website for the Saturday Morning Science program at XULA.",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
-    href: "#",
+      "Share rides & housing and connect with other students during hackathons, conferences, and more.",
+    tags: ["Expo", "React Native", "Supabase"],
+    href: "https://github.com/Tobi3333A/chad-connect",
   },
 ];
 
