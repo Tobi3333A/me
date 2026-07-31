@@ -102,7 +102,7 @@ export const projects: Project[] = [
   {
     title: "Emmanuel",
     description:
-      "Learn the Bible with AI explanations.",
+      "Learn the scriptures with AI explanations right in the Bible App.",
     tags: ["Expo", "SQLite", "Gemini"],
     href: "https://github.com/Tobi3333A/emmanuel",
   }
