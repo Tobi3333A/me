@@ -99,6 +99,13 @@ export const projects: Project[] = [
     tags: ["Expo", "React Native", "Supabase"],
     href: "https://github.com/Tobi3333A/chad-connect",
   },
+  {
+    title: "Emmanuel",
+    description:
+      "Learn the Bible with AI explanations.",
+    tags: ["Expo", "SQLite", "Gemini"],
+    href: "https://github.com/Tobi3333A/emmanuel",
+  }
 ];
 
 export type Writing = {
