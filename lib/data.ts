@@ -25,8 +25,8 @@ export type Experience = {
 export const experiences: Experience[] = [
   {
     company: "Chadashiel Education",
-    role: "Founder",
-    period: "2026 — Present",
+    role: "Founder & Software Engineer",
+    period: "2025 — Present",
     description:
       "Building The AI Academic Coach.",
     href: "https://chadashiel.com",
