@@ -50,6 +50,12 @@ export type Involvement = {
 
 export const involvements: Involvement[] = [
   {
+    org: "Nvidia Summer Bridge Experience",
+    role: "Participant",
+    period: "2026",
+    href: "https://www.nvidia.com/en-us/"
+  },
+  {
     org: "National Society of Black Engineers",
     role: "Member",
     period: "2025 — Present",
