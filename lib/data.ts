@@ -100,6 +100,13 @@ export const projects: Project[] = [
     href: "https://github.com/Tobi3333A/chad-connect",
   },
   {
+    title: "ChadReader",
+    description:
+      "Upload documents, take notes, and read with AI guidance.",
+    tags: ["Expo", "SQLite", "FTS5"],
+    href: "https://github.com/Tobi3333A/ChadReader",
+  },
+  {
     title: "Emmanuel",
     description:
       "Learn the scriptures with AI explanations right in the Bible App.",
