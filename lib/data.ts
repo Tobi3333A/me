@@ -26,7 +26,7 @@ export const experiences: Experience[] = [
   {
     company: "Chadashiel Education",
     role: "Founder & Software Engineer",
-    period: "2025 — Present",
+    period: "2025 — 2026",
     description:
       "Building The AI Academic Coach.",
     href: "https://chadashiel.com",
@@ -67,6 +67,12 @@ export const involvements: Involvement[] = [
     period: "2025 — Present",
     href: 'https://www.colorstack.org/'
   },
+  {
+    org: "Summer Bridge Experience, Morehouse College",
+    role: "Participant",
+    period: "2025",
+    href: "https://morehouse.edu/"
+  }
 ];
 
 export type Project = {
