@@ -1,21 +1,21 @@
-import { philosophies, type Philosophy } from "@/lib/data";
+import { type Philosophy } from "@/lib/data";
 import { SectionHeading } from "@/components/section-heading";
 
 import Link from "next/link";
 
 function PhilosophyRow({ item }: { item: Philosophy }) {
   return (
-    <Link href={`/philosophies/${item.id}`}>
+    <Link href={`/philosophies/${item.guid}`}>
       <div className="flex flex-col gap-2 py-5 sm:flex-row sm:items-baseline sm:gap-8 group list-row">
         <time className="w-28 shrink-0 text-xs font-medium tracking-wide text-ink-faint">
-          {item.date}
+          {item.pubDate}
         </time>
         <div className="min-w-0 flex-1">
           <h3 className="text-base font-semibold tracking-tight text-ink transition-colors group-hover:text-accent-bright">
             {item.title}
           </h3>
           <p className="mt-1.5 max-w-xl text-sm leading-7 text-ink-muted">
-            {item.excerpt}
+            {item.description}
           </p>
         </div>
       </div>
@@ -23,16 +23,18 @@ function PhilosophyRow({ item }: { item: Philosophy }) {
   )
 }
 
-export function Philosophies({
+export async function Philosophies({
   limit,
   showAllLink = false,
   showHeading = true,
+  posts
 }: {
   limit?: number;
   showAllLink?: boolean;
   showHeading?: boolean;
+  posts: Philosophy[]
 }) {
-  const items = limit ? philosophies.slice(0, limit) : philosophies;
+  const items = limit ? posts.slice(0, limit) : posts;
 
   return (
     <section
@@ -50,7 +52,7 @@ export function Philosophies({
       ) : null}
       <div>
         {items.map((item) => (
-          <PhilosophyRow key={item.id} item={item} />
+          <PhilosophyRow key={item.guid} item={item} />
         ))}
       </div>
     </section>
