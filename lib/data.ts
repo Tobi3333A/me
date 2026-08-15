@@ -127,33 +127,12 @@ export const projects: Project[] = [
   }
 ];
 
-export type Writing = {
+export type Philosophy = {
+  id: string;
   title: string;
+  description: string;
   date: string;
-  excerpt: string;
-  href?: string;
+  content: string
 };
 
-export const writings: Writing[] = [
-  {
-    title: "Why simple products win",
-    date: "Mar 12, 2026",
-    excerpt:
-      "Complexity is easy to add. Restraint is the hard part — and usually the reason people stay.",
-    href: "#",
-  },
-  {
-    title: "Shipping as a habit",
-    date: "Jan 4, 2026",
-    excerpt:
-      "The projects that matter most aren't the ones with the best plans. They're the ones that keep moving.",
-    href: "#",
-  },
-  {
-    title: "Designing for quiet confidence",
-    date: "Sep 18, 2025",
-    excerpt:
-      "Good interfaces don't shout. They guide, then get out of the way.",
-    href: "#",
-  },
-];
+export type Philosophies = Philosophy[] | undefined;
