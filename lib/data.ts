@@ -128,10 +128,10 @@ export const projects: Project[] = [
 ];
 
 export type Philosophy = {
-  guid: string;
+  id: string;
   title: string;
   description: string;
-  pubDate: string;
+  date: string;
   content: string
 };
 

@@ -5,10 +5,10 @@ import Link from "next/link";
 
 function PhilosophyRow({ item }: { item: Philosophy }) {
   return (
-    <Link href={`/philosophies/${item.guid}`}>
+    <Link href={`/philosophies/${item.id}`}>
       <div className="flex flex-col gap-2 py-5 sm:flex-row sm:items-baseline sm:gap-8 group list-row">
         <time className="w-28 shrink-0 text-xs font-medium tracking-wide text-ink-faint">
-          {item.pubDate}
+          {item.date}
         </time>
         <div className="min-w-0 flex-1">
           <h3 className="text-base font-semibold tracking-tight text-ink transition-colors group-hover:text-accent-bright">
@@ -52,7 +52,7 @@ export async function Philosophies({
       ) : null}
       <div>
         {items.map((item) => (
-          <PhilosophyRow key={item.guid} item={item} />
+          <PhilosophyRow key={item.id} item={item} />
         ))}
       </div>
     </section>
