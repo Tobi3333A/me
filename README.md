@@ -52,7 +52,7 @@ No environment variables are required.
 
 Update [`lib/data.ts`](lib/data.ts) to change bio, experience, involvements, projects, and social links. The UI reads from that file.
 
-Writing is fetched from [https://emmanuel3412.substack.com/feed](https://emmanuel3412.substack.com/feed) in [`lib/getPosts.ts`](lib/getPosts.ts) and revalidated hourly.
+Writing is fetched from [https://emmanuel0112.substack.com/feed](https://emmanuel3412.substack.com/feed) in [`lib/getPosts.ts`](lib/getPosts.ts) and revalidated hourly.
 
 ## License
 
