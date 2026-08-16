@@ -72,9 +72,11 @@ export async function getPosts() {
     },
   });
   const xml = await res.text();
-  const parser = new XMLParser();
+  const parser = new XMLParser({
+    isArray: (name) => name === "item"
+  });
   const data = parser.parse(xml);
-  let posts = data.rss?.channel.item as
+  let posts = data.rss?.channel?.item as
     | {
         guid: string;
         title: string;
@@ -84,9 +86,6 @@ export async function getPosts() {
         "content:encoded": string;
       }[]
     | undefined;
-    if (posts && !Array.isArray(posts)) {
-      posts = [posts]
-    }
   const processedPosts: Philosophies = posts?.map((p) => ({
     id: new URL(p.guid).pathname.split("/").filter(Boolean).pop()!,
     title: p.title,
