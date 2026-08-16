@@ -51,12 +51,18 @@ function removeElementsByClass(html: string, className: string) {
   return result;
 }
 
+function stripPoetryEditorLabels(html: string) {
+  return html.replace(/<label class="hide-text"[^>]*>[\s\S]*?<\/label>/gi, "");
+}
+
 function cleanPostHtml(html: string) {
-  return [
+  const withoutWidgets = [
     "subscription-widget-wrap-editor",
     "subscription-widget-wrap",
     "image-link-expand",
   ].reduce(removeElementsByClass, html);
+
+  return stripPoetryEditorLabels(withoutWidgets);
 }
 
 export async function getPosts() {
@@ -78,7 +84,6 @@ export async function getPosts() {
         "content:encoded": string;
       }[]
     | undefined;
-    console.log(posts)
     if (posts && !Array.isArray(posts)) {
       posts = [posts]
     }

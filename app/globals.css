@@ -533,6 +533,30 @@ a {
   margin: 0;
 }
 
+.philosophy-body .callout-block {
+  margin-block: 2.25rem;
+}
+
+.philosophy-body .callout-block h2,
+.philosophy-body .callout-block h3,
+.philosophy-body .callout-block h4 {
+  margin-bottom: 0.85rem;
+}
+
+.philosophy-body .preformatted-block pre {
+  margin-block: 0.35rem 0.15rem;
+  padding: 0;
+  overflow-x: visible;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: var(--font-display), Georgia, serif;
+  color: var(--ink);
+  line-height: 1.7;
+}
+
 .philosophy-body .subscription-widget-wrap-editor,
 .philosophy-body .subscription-widget-wrap,
 .philosophy-body .image-link-expand,
