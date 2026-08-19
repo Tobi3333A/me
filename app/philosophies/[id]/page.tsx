@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPosts } from "@/lib/getPosts";
 
@@ -19,6 +20,9 @@ export default async function PhilosophyPage({ params }: { params: Promise<{ id:
 
   return (
     <article className="mx-auto w-full max-w-3xl px-6 pt-14 sm:px-8 sm:pt-16">
+      <Link href="/philosophies" className="link-quiet reveal mb-6 inline-block text-sm">
+        ← Philosophies
+      </Link>
       <h1 className="reveal font-display text-[clamp(2.4rem,7vw,3.75rem)] font-semibold leading-[1.02] tracking-[-0.03em] text-ink">
         {post.title}
       </h1>
