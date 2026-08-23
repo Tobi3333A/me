@@ -26,7 +26,7 @@ export const experiences: Experience[] = [
   {
     company: "Chadashiel Education",
     role: "Founder & Software Engineer",
-    period: "2025 — 2026",
+    period: "2025 — Present",
     description:
       "Building The AI Academic Coach.",
     href: "https://chadashiel.com",
