@@ -24,12 +24,12 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    company: "Chadashiel Education",
+    company: "Klawric (Formerly Chadashiel)",
     role: "Founder & Software Engineer",
     period: "2025 — Present",
     description:
       "Building The AI Academic Coach.",
-    href: "https://chadashiel.com",
+    href: "https://klawric.com",
   },
   {
     company: "Xavier University of Louisiana",
@@ -84,11 +84,11 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Chadashiel",
+    title: "Klawric",
     description:
       "The AI Academic Coach.",
     tags: ["AI SDK", "Next.js", "Supabase", "PGVector"],
-    href: "https://chadashiel.com",
+    href: "https://klawric.com",
   },
   {
     title: "ChadPlace",
