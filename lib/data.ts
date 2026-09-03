@@ -91,6 +91,12 @@ export const projects: Project[] = [
     href: "https://klawric.com",
   },
   {
+    title: 'Edu SDK',
+    description: "TypeScript SDK for AI-powered learning.",
+    tags: ['TypeScript', 'AI SDK', 'React'],
+    href: "https://github.com/Tobi3333A/edu-sdk"
+  },
+  {
     title: "ChadPlace",
     description:
       "Marketplace & Chatting for Students.",
