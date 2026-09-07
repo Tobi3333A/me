@@ -93,7 +93,7 @@ export const projects: Project[] = [
   {
     title: 'Edu SDK',
     description: "TypeScript SDK for AI-powered learning.",
-    tags: ['TypeScript', 'AI SDK', 'React', 'Zod'],
+    tags: ['TypeScript', 'AI SDK', 'React', 'Zod', 'Vitest'],
     href: "https://github.com/Klawrodev/edu-sdk"
   },
   {
