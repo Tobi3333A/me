@@ -28,7 +28,7 @@ export const experiences: Experience[] = [
     role: "Developer",
     period: "2025 — 2026",
     description:
-      "Building The AI Academic Coach.",
+      "Building The AI Workspace for Learning.",
     href: "https://klawric.com",
   },
   {
@@ -86,7 +86,7 @@ export const projects: Project[] = [
   {
     title: "Klawric",
     description:
-      "The AI Academic Coach.",
+      "The AI Workspace for Learning.",
     tags: ["AI SDK", "Next.js", "Supabase", "PGVector"],
     href: "https://klawric.com",
   },
@@ -116,13 +116,6 @@ export const projects: Project[] = [
       "Share rides & housing with other students during hackathons, conferences, and more.",
     tags: ["Expo", "React Native", "Supabase"],
     href: "https://github.com/Tobi3333A/chad-connect",
-  },
-  {
-    title: "ChadReader",
-    description:
-      "Upload documents, take notes, and read with AI guidance.",
-    tags: ["Expo", "SQLite", "FTS5"],
-    href: "https://github.com/Tobi3333A/ChadReader",
   },
   {
     title: "Emmanuel",
