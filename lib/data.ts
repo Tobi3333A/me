@@ -87,13 +87,13 @@ export const projects: Project[] = [
     title: "Klawric",
     description:
       "The AI Workspace for Learning.",
-    tags: ["AI SDK", "Next.js", "Supabase", "PGVector"],
+    tags: ["AI SDK", "Next.js", "Supabase"],
     href: "https://klawric.com",
   },
   {
     title: 'Edu SDK',
     description: "TypeScript SDK for AI-powered learning.",
-    tags: ['TypeScript', 'AI SDK', 'React', 'Zod', 'Vitest'],
+    tags: ['AI SDK', 'React', 'Zod', 'Vitest'],
     href: "https://github.com/Klawrodev/edu-sdk"
   },
   {
