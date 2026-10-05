@@ -97,6 +97,18 @@ export const projects: Project[] = [
     href: "https://github.com/Klawrodev/edu-sdk"
   },
   {
+    title: 'Tensorbench',
+    description: 'Benchmarking toolkit for evaluating model performance across hardware and inference backends',
+    tags: ['Python', 'PyTorch', 'ONNX Runtime'],
+    href: 'https://github.com/Tobi3333A/tensorbench'
+  },
+  {
+    title: 'Trackpilot',
+    description: 'Computer visions system for tracking and autonomous target following',
+    tags: ['OpenCV', 'YOLO', 'ByteTrack'],
+    href: 'https://github.com/Tobi3333A/trackpilot'
+  },
+  {
     title: "ChadPlace",
     description:
       "Marketplace & Chatting for Students.",
