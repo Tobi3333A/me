@@ -50,7 +50,7 @@ export type Involvement = {
 
 export const involvements: Involvement[] = [
   {
-    org: "Nvidia Summer Bridge Experience",
+    org: "NVIDIA Summer Bridge Experience",
     role: "Participant",
     period: "2026",
     href: "https://www.nvidia.com/en-us/"
@@ -98,13 +98,13 @@ export const projects: Project[] = [
   },
   {
     title: 'Tensorbench',
-    description: 'Benchmarking toolkit for evaluating model performance across hardware and inference backends',
+    description: 'Benchmarking toolkit for evaluating model performance across hardware and inference backends.',
     tags: ['Python', 'PyTorch', 'ONNX Runtime'],
     href: 'https://github.com/Tobi3333A/tensorbench'
   },
   {
     title: 'Trackpilot',
-    description: 'Computer visions system for tracking and autonomous target following',
+    description: 'Computer visions system for tracking and autonomous target following.',
     tags: ['OpenCV', 'YOLO', 'ByteTrack'],
     href: 'https://github.com/Tobi3333A/trackpilot'
   },
